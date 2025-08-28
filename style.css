@@ -1,16 +1,29 @@
+:root {
+  --cor-primaria: #0d6efd;
+  --cor-secundaria: #f8f9fa;
+  --cor-texto: #212529;
+  --cor-destaque: #ffc107;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background: #f4f4f4;
-  color: #333;
+  background: var(--cor-secundaria);
+  color: var(--cor-texto);
 }
 
 header {
-  background: #0077cc;
+  background: var(--cor-primaria);
   color: white;
-  padding: 2em;
   text-align: center;
+  padding: 2em;
+}
+
+.perfil {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 1em;
 }
 
 nav ul {
@@ -28,15 +41,78 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #0077cc;
+  color: var(--cor-primaria);
+  font-weight: bold;
 }
 
 main {
   padding: 2em;
 }
 
+section {
+  margin-bottom: 2em;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background: var(--cor-destaque);
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+input, textarea {
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 0.8em;
+  background: var(--cor-primaria);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 footer {
   text-align: center;
-  padding: 1em;
+  padding: 2em;
   background: #ddd;
+}
+
+.social a {
+  margin: 0 1em;
+  text-decoration: none;
+  color: var(--cor-primaria);
+}
+
+.dark {
+  background-color: #121212;
+  color: #f8f9fa;
+}
+
+.dark nav ul {
+  background: #333;
+}
+
+.dark nav ul li a {
+  color: #f8f9fa;
+}
+
+.dark header {
+  background: #222;
+}
+
+.dark button {
+  background: #444;
 }
