@@ -1,8 +1,8 @@
 :root {
-  --cor-primaria: #0d6efd;
-  --cor-secundaria: #f8f9fa;
-  --cor-texto: #212529;
-  --cor-destaque: #ffc107;
+  --cor-primaria: #1e1e2f;
+  --cor-secundaria: #f4f4f4;
+  --cor-texto: #333;
+  --cor-destaque: #ff3c00;
 }
 
 body {
@@ -18,12 +18,6 @@ header {
   color: white;
   text-align: center;
   padding: 2em;
-}
-
-.perfil {
-  width: 120px;
-  border-radius: 50%;
-  margin-bottom: 1em;
 }
 
 nav ul {
@@ -53,14 +47,29 @@ section {
   margin-bottom: 2em;
 }
 
-.btn {
-  display: inline-block;
+.produto {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 1em;
+  margin: 1em 0;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.produto img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 5px;
+}
+
+.produto button {
+  margin-top: 1em;
   padding: 0.5em 1em;
   background: var(--cor-destaque);
-  color: #000;
-  text-decoration: none;
+  color: white;
+  border: none;
   border-radius: 5px;
-  margin-top: 1em;
+  cursor: pointer;
 }
 
 form {
@@ -75,11 +84,11 @@ input, textarea {
   border-radius: 5px;
 }
 
-button {
-  padding: 0.8em;
+button[type="submit"] {
   background: var(--cor-primaria);
   color: white;
   border: none;
+  padding: 0.8em;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -101,6 +110,10 @@ footer {
   color: #f8f9fa;
 }
 
+.dark header {
+  background: #000;
+}
+
 .dark nav ul {
   background: #333;
 }
@@ -109,10 +122,8 @@ footer {
   color: #f8f9fa;
 }
 
-.dark header {
-  background: #222;
-}
-
-.dark button {
-  background: #444;
+.dark .produto {
+  background: #1e1e2f;
+  color: white;
+  border-color: #444;
 }
