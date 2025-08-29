@@ -2,49 +2,120 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>GameZone - Loja de Jogos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameStore | Sua loja de jogos</title>
   <link rel="stylesheet" href="style.css">
-  <script defer src="scripts.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>🎮 GameZone</h1>
-    <p>Os melhores jogos em um só lugar!</p>
-    <div id="timer">⚡ Promoção relâmpago termina em: <span id="countdown"></span></div>
+    <h1 id="titulo"></h1>
+    <p>Os melhores jogos para PC, console e mobile — com preços imbatíveis!</p>
+    <button onclick="document.body.classList.toggle('dark')">🌙</button>
   </header>
 
-  <section class="promocoes">
-    <div class="promo-semana">
-      <h2>🔥 Promoção da Semana</h2>
-      <p>Descontos de até 70% em jogos de aventura!</p>
-    </div>
-    <div class="promo-dia">
-      <h2>⚡ Oferta do Dia</h2>
-      <p>"CyberWarrior" por apenas R$19,90!</p>
-    </div>
-  </section>
+  <nav>
+    <ul>
+      <li><a href="#destaques">Destaques</a></li>
+      <li><a href="#promocoes">Promoções</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
 
-  <section class="jogos">
-    <h2>🕹️ Jogos em Destaque</h2>
-    <div class="grid-jogos">
-      <div class="jogo">
-        <a href="jogo1.html">
-          <img src="imagens/jogo1.jpg" alt="CyberWarrior">
-          <h3>CyberWarrior</h3>
-        </a>
+  <main>
+    <section id="destaques">
+      <h2>🎮 Jogos em Destaque</h2>
+      <div class="produto">
+        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/227300/9a81dc3126c56637297b654f9dcac057cfd79b77/header.jpg?t=1756205976" alt="Jogo 1">
+        <h3>Euro Truck Simulator 2</h3>
+        <p>R$ 10,90</p>
+        <button>Comprar</button>
       </div>
-      <div class="jogo">
-        <a href="jogo2.html">
-          <img src="imagens/jogo2.jpg" alt="DragonQuest">
-          <h3>DragonQuest</h3>
-        </a>
+      <div class="produto">
+        <img src="https://assets.nuuvem.com/image/upload/v1/products/56bc86d7d27734315200006b/sharing_images/qetmoe2usovfvieowua6.jpg" alt="Jogo 2">
+        <h3>American Truck Simulator</h3>
+        <p>R$ 10,90</p>
+        <button>Comprar</button>
       </div>
-    </div>
-  </section>
+      <div class="produto">
+        <img src="https://s2-techtudo.glbimg.com/Dx-d7zd6abaVIdY1QqGVKl_QvJ4=/0x0:620x349/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/s/i/R6L1HDR3GxheHSo2ECLQ/2013-10-11-grand-theft-auto-5-gta-finais.jpg" alt="Jogo 3">
+        <h3>Grand Thef Auto V </h3>
+        <p>R$ 16,00</p>
+        <button>Comprar</button>
+      </div>
+        <div class="produto">
+        <img src="https://i.ytimg.com/vi/QdBZY2fkU-0/maxresdefault.jpg" alt="Jogo 4">
+        <h3>Grand Thef Auto VI </h3>
+        <p>R$ 1.600,00</p>
+        <button>Comprar</button>
+      </div>
+        <div class="produto">
+        <img src="https://store-images.s-microsoft.com/image/apps.27100.13510798887602644.e06d6ca7-79aa-4a32-808a-3c1c8158abb8.d583acc8-fc85-48ca-81b5-1001a7322781?q=90&w=177&h=177" alt="Jogo 5">
+        <h3>Forza Horizon 7 </h3>
+        <p>R$ 100,00</p>
+        <button>Comprar</button>
+      </div>
+        <div class="produto">
+        <img src="https://cdn.awsli.com.br/2500x2500/1041/1041512/produto/249536420/tekken-8-ultimate-edition---pc-c-digo-digital-6m956vkfu9.jpg" alt="Jogo 6">
+        <h3>Tekken 8 </h3>
+        <p>R$ 60,00</p>
+        <button>Comprar</button>
+      </div>
+        <div class="produto">
+        <img src="https://gaming-cdn.com/images/products/13506/orig/uncharted-5-pc-game-cover.jpg?v=1749636809"Jogo 7">
+        <h3>Uncharted 5 </h3>
+        <p>R$ 20,00</p>
+        <button>Comprar</button>
+      </div>
+    </section>
+
+    <section id="promocoes">
+      <h2>🔥 Promoções da Semana</h2>
+      <ul>
+        <li>🕹️ Call Of Duty Modern Warfare 4 – de R$ 49,90 por R$ 19,90</li>
+         <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/7940/header.jpg?t=1748043968"Jogo 1">
+        <li>🧙‍♂️ BattleField 2042 – de R$ 99,90 por R$ 39,90</li>
+         <img src="https://cdn2.unrealengine.com/egs-battlefield2042-dice-s1-2560x1440-1ba4646ffba8.jpg?resize=1&w=480&h=270&quality=medium"Jogo 2">
+        <li>🧙‍♂️ Crash Bandicoot – de R$ 50,90 por R$ 19,00</li>
+         <img src="https://upload.wikimedia.org/wikipedia/pt/d/dd/Crash_Bandicoot_1_capa.png"Jogo 3">
+        <li>🏎️ Forza Horizon 5 – de R$ 79,90 por R$ 29,90</li>
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnwsa0CZgM6cGiSCGfKOX4qH2-RGyov6EcqQ&s"Jogo 4">
+        <li>🏎️ Gran Turismo 7 – de R$ 150,90 por R$ 40,90</li>
+         <img src="https://upload.wikimedia.org/wikipedia/pt/d/d7/Gran_Turismo_7_capa.png"Jogo 5">
+      </ul>
+    </section>
+
+    <section id="contato">
+      <h2>📬 Fale Conosco</h2>
+      <form action="https://formspree.io/f/seu-id" method="POST">
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu email" required>
+        <textarea name="mensagem" placeholder="Sua mensagem"></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
 
   <footer>
-    <h2>👨‍💻 Sobre o Criador</h2>
-    <p>Site desenvolvido por João Silva, apaixonado por tecnologia e jogos. Contato: joao@email.com</p>
+    <div class="social">
+      <a href="https://instagram.com/sualoja">Instagram</a>
+      <a href="https://facebook.com/sualoja">Facebook</a>
+      <a href="https://api.whatsapp.com/message/ZN56I2FVQP56E1?autoload=1&app_absent=0">WhatsApp</a>
+    </div>
+    <p>© 2025 GameStore. Todos os direitos reservados.</p>
   </footer>
+
+  <script>
+    const texto = "Bem-vindo à GameStore!";
+    let i = 0;
+    function digitar() {
+      if (i < texto.length) {
+        document.getElementById("titulo").innerHTML += texto.charAt(i);
+        i++;
+        setTimeout(digitar, 100);
+      }
+    }
+    digitar();
+  </script>
 </body>
 </html>
